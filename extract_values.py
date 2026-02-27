@@ -52,6 +52,7 @@ if __name__ == "__main__":
         "https://github.com/Alvin9999-newpac/fanqiang/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
         "https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
         # 可继续添加更多URL...
+        # wiki页面会间断消失TODO
     ]
     
     # 调用函数，自定义保存路径（可选）
