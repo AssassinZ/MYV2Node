@@ -7,7 +7,7 @@ def extract_bash_content(html_content):
     :param html_content: 网页原始文本内容（字符串）
     :return: 匹配到的所有目标内容列表（去重+过滤空内容）
     """
-    # 关键修改：匹配bash//r//n开头、//r//n结束的内容
+    # 关键修改：匹配bash\r\n开头、\r\n结束的内容(+转义符)
     pattern = r'bash\\r\\n(.*?)\\r\\n'
     matches = re.findall(pattern, html_content, re.DOTALL)
     # 清洗内容：去重 + 过滤空字符串/纯空格的内容
