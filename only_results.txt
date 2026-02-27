@@ -1,5 +1,72 @@
-ssr://c3NyMi43NjI5ODgueHl6OjMzMzM2OmF1dGhfY2hhaW5fYTpjaGFjaGEyMC1pZXRmOnRsczEuMl90aWNrZXRfYXV0aDpaRzl1WjNSaGFYZGhibWN1WTI5dC8_b2Jmc3BhcmFtPSZyZW1hcmtzPVUxTlM2SXFDNTRLNQ
-ss://YWVzLTI1Ni1nY206YWx2aW45OTk5LmNvbQ@[2a14:7584:d0a1::a]:12345#SS%E8%8A%82%E7%82%B9-ipv6
-vless://bcb13ecb-4f63-4257-ae01-ec5aeaa613a5@157.254.223.64:23000?encryption=none&security=reality&sni=mxj.myanimelist.net&fp=chrome&pbk=dJFLqPCinyadJxJk7zA_DwBOEAvexvm7AZT2Pw84_EY&sid=955275866feece09&spx=%2F&type=xhttp&path=%2Falvin9999.com#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6ICIyYTE0Ojc1ODQ6ZDBhMjo6YSIsDQogICJwb3J0IjogIjIzNDU2IiwNCiAgImlkIjogImJkNDhlMGFjLWU5MGUtNDQ1MS1hNGYyLWFiZjA2MWNmYjg5MCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAid3d3LmJpbmcuY29tIiwNCiAgInBhdGgiOiAiL2FsdmluOTk5OS5jb20iLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
-hysteria2://dongtaiwang.com@[2a14:7584:d04a::a]:50022?sni=apple.com&alpn=h3&insecure=1#Hysteria2%E8%8A%82%E7%82%B93-ipv6
+                           免费翻墙软件
+- 北京时间 2026 年 1 月 20 日：
+    - 更新Chrome 144 集合版，更新浏览器内核到Chrome 144，更新clash.meta、xray、sing-box、hysteria2、naiveproxy、mieru、shadowquic工具至最新版，优化浏览器。
+    - 更新Chrome 135 集合版，更新clash.meta、xray、sing-box、hysteria2、naiveproxy、mieru、shadowquic工具至最新版，优化浏览器。
+    - 更新Chrome 109 集合版，更新clash.meta、xray、sing-box工具至最新版，优化浏览器。
+    - 更新Chrome 144 Quick版，更新浏览器内核到Chrome 144，更新quick工具至最新版，优化浏览器。
+    - 更新Chrome 135 Quick版，更新quick工具至最新版，优化浏览器。
+    - 更新Chrome 109 Quick版，更新ip更新地址、失效地址和使用说明文档，更新Quick工具至最新版。
+    - 更新 Supermium 126 集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新 Firefox 142 高内核集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+
+
+- 北京时间 2025 年 12 月 27 日：
+    - 更新Chrome 143 集合版，更新Chrome 143集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新Chrome 135 集合版，更新Chrome 143集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新Chrome 109 集合版，更新Chrome 143集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新Chrome 143 Quick版，更新ip更新地址、失效地址和使用说明文档，更新Quick工具至最新版。
+    - 更新Chrome 135 Quick版，更新ip更新地址、失效地址和使用说明文档，更新Quick工具至最新版。
+    - 更新Chrome 109 Quick版，更新quick工具至最新版，优化浏览器。
+    - 更新 Supermium 126 集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新 Firefox 142 高内核集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+
+
+- 北京时间 2025 年 12 月 12 日：
+    - 更新Chrome 143 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新Chrome 135 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新Chrome 109 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新Chrome 143 Quick版，解决个别系统打开软件出现闪退问题，优化浏览器。
+    - 更新Chrome 135 Quick版，解决个别系统打开软件出现闪退问题，优化浏览器。
+    - 更新Chrome 109 Quick版，解决个别系统打开软件出现闪退问题，优化浏览器。
+    - 更新 Supermium 126 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新 Firefox 142 高内核集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+
+
+
+- ......
+                           免费翻墙软件
+- 北京时间 2026 年 1 月 20 日：
+    - 更新Chrome 144 集合版，更新浏览器内核到Chrome 144，更新clash.meta、xray、sing-box、hysteria2、naiveproxy、mieru、shadowquic工具至最新版，优化浏览器。
+    - 更新Chrome 135 集合版，更新clash.meta、xray、sing-box、hysteria2、naiveproxy、mieru、shadowquic工具至最新版，优化浏览器。
+    - 更新Chrome 109 集合版，更新clash.meta、xray、sing-box工具至最新版，优化浏览器。
+    - 更新Chrome 144 Quick版，更新浏览器内核到Chrome 144，更新quick工具至最新版，优化浏览器。
+    - 更新Chrome 135 Quick版，更新quick工具至最新版，优化浏览器。
+    - 更新Chrome 109 Quick版，更新ip更新地址、失效地址和使用说明文档，更新Quick工具至最新版。
+    - 更新 Supermium 126 集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新 Firefox 142 高内核集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+
+
+- 北京时间 2025 年 12 月 27 日：
+    - 更新Chrome 143 集合版，更新Chrome 143集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新Chrome 135 集合版，更新Chrome 143集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新Chrome 109 集合版，更新Chrome 143集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新Chrome 143 Quick版，更新ip更新地址、失效地址和使用说明文档，更新Quick工具至最新版。
+    - 更新Chrome 135 Quick版，更新ip更新地址、失效地址和使用说明文档，更新Quick工具至最新版。
+    - 更新Chrome 109 Quick版，更新quick工具至最新版，优化浏览器。
+    - 更新 Supermium 126 集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+    - 更新 Firefox 142 高内核集合版，更新ip更新地址、失效地址和使用说明文档，更新clash.meta、sing-box工具至最新版。
+
+
+- 北京时间 2025 年 12 月 12 日：
+    - 更新Chrome 143 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新Chrome 135 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新Chrome 109 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新Chrome 143 Quick版，解决个别系统打开软件出现闪退问题，优化浏览器。
+    - 更新Chrome 135 Quick版，解决个别系统打开软件出现闪退问题，优化浏览器。
+    - 更新Chrome 109 Quick版，解决个别系统打开软件出现闪退问题，优化浏览器。
+    - 更新 Supermium 126 集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+    - 更新 Firefox 142 高内核集合版，解决个别系统打开软件出现闪退问题，优化浏览器，更新xray工具至最新版。
+
+
+
+- ......
