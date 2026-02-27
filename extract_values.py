@@ -27,7 +27,7 @@ def extract_from_single_url(url, retry_on_invalid=True):
         return re.match(r'^[a-zA-Z0-9]+://', cleaned_value) is not None
     
     # 最大重试次数（包括初始获取+格式校验失败重试）
-    max_total_tries = 3
+    max_total_tries = 5
     current_try = 0
     
     while current_try < max_total_tries:
@@ -36,7 +36,7 @@ def extract_from_single_url(url, retry_on_invalid=True):
             response = requests.get(
                 url, 
                 headers=headers, 
-                timeout=15,
+                timeout=10,
                 allow_redirects=True
             )
             response.raise_for_status()
@@ -54,13 +54,13 @@ def extract_from_single_url(url, retry_on_invalid=True):
             
             # 校验通过：返回有效结果
             if valid_values:
-                print(f"✅ 第 {current_try} 次获取 {url}：提取到 {len(valid_values)} 个有效值（符合 vless:///vmess:///v2ray:///ss:// 等格式）")
+                print(f"✅ 第 {current_try} 次获取 {url}：提取到 {len(valid_values)} 个有效值")
                 return valid_values
             # 校验失败：判断是否重试
             else:
                 if retry_on_invalid and current_try < max_total_tries:
                     print(f"⚠️ 第 {current_try} 次获取 {url}：提取到 {len(raw_values)} 个值，但均不符合「字母/数字+://」格式，即将重试...")
-                    time.sleep(3)  # 重试前等待3秒，避免高频请求
+                    time.sleep(5)  # 重试前等待5秒，避免高频请求
                 else:
                     print(f"❌ 第 {current_try} 次获取 {url}：最终未提取到符合格式的值（共提取到 {len(raw_values)} 个无效值）")
                     return []
@@ -89,7 +89,7 @@ def batch_extract_to_pure_txt(url_list, save_path="only_results.txt"):
                 f.write(f"{value}\n")
         total_count += len(valid_values)
         # URL间间隔，避免反爬
-        time.sleep(1)
+        time.sleep(3)
     
     print(f"\n📁 最终结果已写入：{save_path}，总计提取到 {total_count} 个符合「字母/数字+://」格式的值")
 
@@ -100,6 +100,7 @@ if __name__ == "__main__":
         "https://github.com/Alvin9999-newpac/fanqiang/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
         "https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
         # 可继续添加更多URL...
+        # 上述github wiki会抽风、间歇性404
     ]
     
     # 调用函数，自定义保存路径
