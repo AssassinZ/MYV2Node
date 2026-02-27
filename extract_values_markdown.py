@@ -8,7 +8,9 @@ def extract_bash_content(html_content):
     :return: 匹配到的所有目标内容列表（去重+过滤空内容）
     """
     # 关键修改：匹配bash\r\n开头、\r\n结束的内容(+转义符)
-    pattern = r'bash\\r\\n(.*?)\\r\\n'
+    # pattern = r'bash\\r\\n(.*?)\\r\\n'#GitLab
+    # pattern = r'bash\n(.*?)\n'#GitHub
+    pattern = r'```bash(.*?)```'#通用
     matches = re.findall(pattern, html_content, re.DOTALL)
     # 清洗内容：去重 + 过滤空字符串/纯空格的内容
     clean_matches = []
@@ -27,6 +29,7 @@ def write_to_txt(content_list, file_path="extracted_bash.txt"):
     if not content_list:  # 无有效内容时不写入
         return
     try:
+
         # 以"追加模式"打开，UTF-8编码防乱码
         with open(file_path, "a", encoding="utf-8") as f:
             # 仅写入纯结果，每条结果单独一行
@@ -36,11 +39,12 @@ def write_to_txt(content_list, file_path="extracted_bash.txt"):
     except Exception as e:
         print(f"❌ 写入TXT失败：{str(e)}")
 
-def extract_from_urls(url_list, timeout=10):
+def extract_from_urls(url_list, timeout=10, output_path="extracted_bash.txt"):
     """
     顺序执行一次提取多个URL的目标内容，仅输出纯结果到TXT
     :param url_list: 待提取的URL列表
     :param timeout: 单个URL请求超时时间（秒），默认10秒
+    :param output_path: 输出文件路径
     """
     # 模拟浏览器请求头（规避GitLab反爬）
     headers = {
@@ -71,8 +75,8 @@ def extract_from_urls(url_list, timeout=10):
                 print(f"✅ 提取到 {len(content_list)} 条干净结果：")
                 for i, content in enumerate(content_list, 1):
                     print(f"  {i}. {content}")
-                # 仅写入纯结果到TXT
-                write_to_txt(content_list)
+                # 仅写入纯结果到TXT（修复：传入自定义输出路径）
+                write_to_txt(content_list, file_path=output_path)
             else:
                 print("❌ 未提取到符合条件的有效内容")
         
@@ -90,15 +94,19 @@ def extract_from_urls(url_list, timeout=10):
 if __name__ == "__main__":
     # -------------------------- 配置项（按需修改） --------------------------
     TARGET_URLS = [
-        # GitHub抽风、改为gitlab
-        "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
-        "https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
+        # GitHub经常抽风so改为GitLab:默认md格式
+        # "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
+        # "https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7",
+        # GitHub_markdown链接
+        "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md",
+        "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md",
     ]
     REQUEST_TIMEOUT = 10  # 单个URL请求超时时间（秒）
-    OUTPUT_TXT_PATH = "gitlab.txt"  # 纯结果输出路径
+    OUTPUT_TXT_PATH = "md.txt"  # 纯结果输出路径
     # -----------------------------------------------------------------------
 
     extract_from_urls(
         url_list=TARGET_URLS,
-        timeout=REQUEST_TIMEOUT
+        timeout=REQUEST_TIMEOUT,
+        output_path=OUTPUT_TXT_PATH  # 修复：传入输出路径
     )
